@@ -1,6 +1,6 @@
 ## 百度语音识别/语音合成服务本地化部署
 
-## 基于Android Studio开发集成##
+## 基于Android Studio开发集成
 
 ### step1: 项目根目录build.gradle文件allprojects节点添加配置
 
