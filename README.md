@@ -2,7 +2,7 @@
 
 ## 基于Android Studio开发集成##
 
-### step1: 项目根目录build.gradle添加配置###
+### step1: 项目根目录build.gradle文件allprojects节点添加配置
 
 ```bash
 allprojects {
@@ -14,7 +14,7 @@ allprojects {
 ```
 
 
-### step2： app根目录build.gradle添加依赖###
+### step2： app根目录build.gradle添加依赖
 
 ```bash
 dependencies {
@@ -24,7 +24,7 @@ dependencies {
 ```
 
 
-### step3：目标入口处添加代码###
+### step3：目标入口处添加代码
 ```bash
 Config config = new Config();
 config.setShowLog(true);  //是否打印日志
