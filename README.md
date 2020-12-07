@@ -32,5 +32,18 @@ config.setShowLog(true);  //是否打印日志
 config.setAsrServerUrl(""); // 语音识别服务器地址
 config.setTtsServerUrl("");  // 语音合成服务器地址
 config.setWebServerUrl("");  // 网页链接
+config.setWebServerUrl("");  // 网页链接
 SpeechSDK.startSpeech(context,config);
+```
+
+
+### step3.1 fragment方式接入
+```bash
+SpeechFragment fragment = SpeechFragment.newInstance(config);
+fragment.setOnCloseCallListener(new OnCloseCallListener() {
+    public void onCloseCall() {
+         SpeechActivity.this.finish();  //你期望的处理方式
+    }
+});
+getSupportFragmentManager().beginTransaction().replace(id.frame, fragment).commitAllowingStateLoss(); //你期望的处理方式
 ```
