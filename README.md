@@ -32,7 +32,7 @@ config.setShowLog(true);  //是否打印日志
 config.setAsrServerUrl(""); // 语音识别服务器地址
 config.setTtsServerUrl("");  // 语音合成服务器地址
 config.setWebServerUrl("");  // 网页链接
-config.setWebServerUrl("");  // 网页链接
+config.setAsrPid(888);  // 网页链接
 SpeechSDK.startSpeech(context,config);
 ```
 
