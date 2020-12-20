@@ -28,11 +28,15 @@ dependencies {
 ```bash
 Config config = new Config();
 config.setShowLog(true);  //是否打印日志
-//以下参数由服务方提供：
+config.setWriteLog(true); //是否保存日志文件，true则输出日志到 手机储存/MjxxSdkLogs/
+
 config.setAsrServerUrl(""); // 语音识别服务器地址
+config.setAsrPid(Integer.parseInt("");  //选填，默认888
+config.setAsrLongRecordEnable(true);  //asr收否支持长时间录音
+config.setAsrSaveRecord(true);  //是否保存asr录音文件，true则保存到 手机储存/MUSIC/baidu_asr/
+
 config.setTtsServerUrl("");  // 语音合成服务器地址
-config.setWebServerUrl("");  // 网页链接
-config.setAsrPid(888);  // asrPID，非必填
+config.setWebServerUrl(""); //web host
 SpeechSDK.startSpeech(context,config);
 ```
 
