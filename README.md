@@ -19,7 +19,7 @@ allprojects {
 ```bash
 dependencies {
    ...yours...
-   implementation 'com.github.hezh-0617:MjxxSDK:native_1.0.9' //添加依赖
+   implementation 'com.github.hezh-0617:MjxxSDK:native_1.0.10' //添加依赖
 }
 ```
 
@@ -37,6 +37,7 @@ config.setAsrSaveRecord(true);  //是否保存asr录音文件，true则保存到
 
 config.setTtsServerUrl("");  // 语音合成服务器地址
 config.setWebServerUrl(""); //web host
+config.setRemoteServerHost(""); //如需代理，请配置我方业务服务器Host
 SpeechSDK.startSpeech(context,config);
 ```
 
