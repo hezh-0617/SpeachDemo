@@ -19,7 +19,7 @@ allprojects {
 ```bash
 dependencies {
    ...yours...
-   implementation 'com.github.hezh-0617:MjxxSDK:native_1.0.12' //添加依赖
+   implementation 'com.github.hezh-0617:MjxxSDK:native_1.0.13' //添加依赖
 }
 ```
 
